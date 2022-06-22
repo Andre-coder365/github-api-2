@@ -11,6 +11,6 @@ Nesse app é possível acessar uma página no navegador e pesquisar por usuário
 
 
 
-#### No commit inicial, o código está gerando no navegador o resultado da imagem abaixo:
+#### No commit inicial, o código está gerando no navegador o resultado da imagem abaixo  (nessa etapa, os dados são mockados, ilustrativos):
 
 <img src="Resultado-1o-Commit.jpg">
