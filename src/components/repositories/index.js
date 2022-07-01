@@ -1,4 +1,5 @@
 import React from 'react';
+import RepositoryItem from '../repository-item';
 import * as S from "./styled";
 
 function Repositories() {
@@ -12,8 +13,17 @@ function Repositories() {
             <S.WrapperTab>Repositories</S.WrapperTab>
             <S.WrapperTab>Starred</S.WrapperTab>
         </S.WrapperTabList>
-        <S.WrapperTabPanel>panel Repositories</S.WrapperTabPanel>
-        <S.WrapperTabPanel>panel Starred</S.WrapperTabPanel>
+        <S.WrapperTabPanel>
+          <RepositoryItem 
+          name = "jogo-da-memoria" 
+          linkToRepo="https://github.com/Andre-coder365/jogo-da-memoria"
+          fullName = "Andre-coder365/jogo-da-memoria"/>
+        </S.WrapperTabPanel>
+        <S.WrapperTabPanel>
+          <RepositoryItem name = "livro-receitas" 
+          linkToRepo="https://github.com/Andre-coder365/livro-receitas"
+          fullName = "Andre-coder365/livro-receitas"/>
+        </S.WrapperTabPanel>
         
     </S.WrapperTabs>
   );
