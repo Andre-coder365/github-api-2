@@ -8,7 +8,7 @@ export const GithubContext = createContext ({
 
 function GithubProvider({Children}) 
 {
-    useState [githubState, setGithubState] = useState({
+    const [githubState, setGithubState] = useState({
         user: {
             login: undefined,
             name: undefined,
@@ -31,7 +31,7 @@ function GithubProvider({Children})
         const contextValue = {githubState,};
 
   return (
-    <GithubProvider.Provider value = {contextValue}>{Children}</GithubProvider.Provider>
+    <GithubContext.Provider value = {contextValue}>{Children}</GithubContext.Provider>
 
   );
 };
