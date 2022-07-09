@@ -6,12 +6,12 @@ export const GithubContext = createContext ({
     starred: [],
 });
 
-function GithubProvider({Children}) 
+const GithubProvider = ({Children}) => 
 {
     const [githubState, setGithubState] = useState({
         user: {
             login: undefined,
-            name: undefined,
+            name: 'André',
             publicUrl: undefined,
             blog: undefined,
             company: undefined,
