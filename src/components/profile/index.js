@@ -11,13 +11,23 @@ const Profile = () =>
     <S.Wrapper>
         <S.WrapperImage src="https://avatars.githubusercontent.com/u/106115194?v=4" alt="Avatar of user"/>
         <S.WrapperInfoUser>
+
             <div>
-          <h1>githubState</h1>
+
+          <h1>   {githubState.user.name}   </h1>
+
           <S.WrapperUserName>
           <h3>Username:</h3>
-          <a href = "https://github.com/Andre-coder365" target = "_blank" rel='noreferrer'>Andre-coder365</a>
+
+          <a href = "https://github.com/Andre-coder365" target = "_blank" rel='noreferrer'>
+
+            {githubState.user.name}
+
+            </a>
+
           </S.WrapperUserName>
             </div>
+
           <S.WrapperStatusCount>
             <div>
             <h4>Followers</h4>
